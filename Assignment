@@ -1,0 +1,229 @@
+/**
+ Assignment No. 1: Title Case Converter Function
+Problem Statement:
+Create a JavaScript function convertToTitleCase that takes a string as an argument and converts it into title case (capitalizes the first letter of each word). Ensure the function handles different cases, including strings with leading or trailing spaces.
+
+Function Signature:
+function convertToTitleCase(inputString) {
+    // Your code here
+}
+Submission Guidelines:
+Submit the JavaScript script or file containing the implementation of the convertToTitleCase function. Include comments, test cases, and explanations for any key aspects of the code. Submit before the specified deadline.
+
+Example:
+var result = convertToTitleCase("hello world");
+console.log(result);
+// Expected Output: "Hello World"
+ */
+// function convertToTitleCase(inputString) {
+//   let a = inputString; // i declire here parameters.
+
+//   let c = a.replace("h","H"); // here, i use replace function for replace 1st value.
+//   let d = a.replace("w","W"); // also here, i use replace function for second value after space.
+//   let e = c.concat(d); // here, i concatinate both values.
+//   // console.log(e)  // it shows like this => "Hamza SaeedHamza Saeed"
+//   let f = e.substring(0,6); // to use substring function, i get value from "e" variable.
+//   let g = e.substring(17,23) // to use substring function, i get value from "e" variable.
+// let h = f.concat(g) // further, again i concat variavle "f","g".
+//   // console.log(f);
+//   // console.log(g);
+//   console.log(h);
+// }
+// convertToTitleCase("Hamza Saeed");
+
+// ----------------------------------------------------------------
+/*
+Assignment No. 2: Time-Based Greeting Function
+Problem Statement:
+Optimize and enhance the existing getGreeting function, which provides a time-based greeting. Refactor the code for improved readability, handle edge cases gracefully, and test the function with various times of the day.
+
+Original Function:
+function getGreeting() {
+  // Original code here
+}
+
+var greeting = getGreeting();
+console.log(greeting);
+Submission Guidelines:
+Submit the optimized JavaScript script or file with the modified getGreeting function. Include comments, test cases, and explanations for any changes made. Submit before the specified deadline.
+
+Expected Output:
+// Varies based on the current time of day
+ */
+// function getGreeting() {
+//   let time = new Date ();
+//   let currentTime = time.getHours();
+//   console.log(currentTime)
+//   if (currentTime > 5 && currentTime < 12){
+//     console.log("Good Morning")
+//   }else if (currentTime >= 12 && currentTime < 17){
+// console.log("Good Afternoon")
+//   } else if (currentTime >=17 && currentTime < 21){
+//     console.log("Good Evening")
+//   } else {
+//     console.log("Good Night")
+//   }
+// }
+// getGreeting();
+// ----------------------------------------------------------------
+/*
+Assignment No. 3: Current Day of the Week Function
+Problem Statement:
+Create a JavaScript function, getCurrentDayOfWeek, that returns the current day of the week. Utilize the JavaScript Date object, store days of the week in an array, and ensure the function handles errors or unexpected scenarios. Test the function with different dates.
+*/
+// function currentDayOfWeek(){
+//   let days =  [0,1,2,3,4,5,6]
+//  let currentDay = new Date();
+//  let cu = currentDay.getDay();
+// //  console.log(cu)
+
+//   if (cu === days[0]){
+//     return ("Sunday");
+//   } else if ( cu === days[1]){
+//     return ("Monday");
+//   } else if ( cu === days[2]){
+//     return ("Tuesday");
+//   } else if ( cu === days[3]){
+//     return ("Wednesday");
+//   } else if (  cu === days[4]){
+//     return ("Thursday");
+//   } else if (  cu === days[5]){
+//     return ("Friday");
+//   } else if (  cu === days[6]) {
+//     return ("Saturday");
+//   } else {
+//     return ("jdjsdk");
+//   }
+
+// }let a = currentDayOfWeek();
+// console.log("Today is ",a);
+// step 2 
+// function currentDayOfWeek(){
+//   let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+//   // console.log(days)
+//   let day = new Date();
+//   let a = day.getDay();
+//   // console.log(a);
+//   return days[a];
+//   }
+//   let b = currentDayOfWeek()
+//   console.log("Today is "+ b)
+//---------------------------------------------------------------------
+/*
+Assignment No. 4: Console-Based Digital Clock in 24-Hour Format
+Problem Statement:
+Develop a console-based digital clock in 24-hour format using JavaScript. Continuously display the current time in the format HH:MM:SS in the console. Handle different cases and ensure continuous updating.
+*/
+// function digitalClock(){
+// let clock = new Date();
+// let HH = clock.getHours();
+// let MM = clock.getMinutes();
+// let SS = clock.getSeconds();
+// console.clear();
+// console.log(HH + ":" + MM + ":" + SS);
+// }
+// setInterval(digitalClock,1000);
+//------------------------------------------------------------------------
+/*
+Assignment No. 5: Console-Based Digital Clock in 12-Hour Format
+Problem Statement:
+Develop a console-based digital clock in 12-hour format using JavaScript. Continuously display the current time in the format hh:mm:ss AM/PM in the console. Handle different cases and ensure continuous updating.
+ */
+// function digitalClock(){
+//   let time = new Date();
+//   let hr12 = time.toLocaleTimeString();
+//   console.clear();
+//   console.log(hr12);
+//   }
+//   setInterval(digitalClock,1000);
+  //------------------------------------------------------------------------
+  
+  /*
+  Assignment No. 6: Find Max and Min Values
+  Problem Statement:
+  Create a JavaScript function findMaxMin that takes a variable number of numeric arguments and finds the maximum and minimum values among them using the Math methods. Handle different cases gracefully and provide comments to explain the logic.
+  */
+  
+  // function findMaxMin(num){
+  // let max = Math.max(...num);
+  // console.log(max)
+  // let min = Math.min(...num);
+  // console.log(min);
+  
+  // }
+  // findMaxMin([2,3,5,6,77,47,22,4,3,1]);
+//---------------------------------------------------------------
+/*
+Assignment No. 7: Math Object Exploration
+Problem Statement:
+Create a JavaScript program that explores and demonstrates the usage of various methods available in the Math object.
+
+Cover a range of methods, showcasing their functionalities. Include comments to explain the purpose and functionality of each method.
+ */
+
+// function exploreMathObject() {
+//   console.log(Math.random());
+//   let a = 4.8;
+//   console.log(Math.floor(a));
+//   console.log(Math.ceil(a));
+//   console.log(Math.round(a));
+//   console.log(Math.sqrt(a))
+
+// }
+// exploreMathObject()
+//---------------------------------------------------------------
+
+/*
+Problem Statement:
+Create a JavaScript program that leverages higher-order functions and callback functions. The program should demonstrate the concept of passing functions as arguments and using them within higher-order functions.
+
+Function Signature:
+function performOperation(num1, num2, operationCallback) {
+    // Your code here
+}
+
+function displayResult(message, value) {
+    // Your code here
+}
+
+// Example usage
+var result1 = performOperation(5, 3, addition);
+displayResult("Addition Result", result1);
+
+var result2 = performOperation(4, 6, multiplication);
+displayResult("Multiplication Result", result2);
+Submission Guidelines:
+Submit a JavaScript file (e.g., higherOrderCallback.js) containing the code for the performOperation, callback functions, and displayResult. Include comments, test cases, and explanations for key aspects of the code. Submit before the specified deadline.
+
+Expected Output:
+var result1 = performOperation(5, 3, addition);
+displayResult("Addition Result", result1);
+// Expected Output: "Addition Result: 8"
+
+var result2 = performOperation(4, 6, multiplication);
+displayResult("Multiplication Result", result2);
+// Expected Output: "Multiplication Result: 24"
+*/
+// function performOperation(num1, num2, operationCallback) {
+//  return operationCallback(num1,num2);
+// }
+
+// function displayResult(message, value) {
+// console.log(message,value);
+// }
+// function addition (val1,val2){
+//   return (val1 + val2)
+// }
+// function multiplication (val1,val2){
+//   return (val1 * val2)
+// }
+// let res1 = performOperation(5,4,addition);
+// displayResult("Addition Result:",res1)
+// let res2 = performOperation(5,4,multiplication);
+// displayResult("Addition Result:",res2)
+
+
+ 
+
+
+
