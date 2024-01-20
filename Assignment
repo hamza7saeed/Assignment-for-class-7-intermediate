@@ -15,21 +15,17 @@ var result = convertToTitleCase("hello world");
 console.log(result);
 // Expected Output: "Hello World"
  */
-// function convertToTitleCase(inputString) {
-//   let a = inputString; // i declire here parameters.
+function fullName (name){
+  let arr = name.split(" ");
+  let str = "";
+  for (let i = 0 ; i < arr.length; i++){
+    arr[i]=arr[i].charAt().toUpperCase()+ arr[i].slice(1) + " "; 
+    str += arr[i] + " "
 
-//   let c = a.replace("h","H"); // here, i use replace function for replace 1st value.
-//   let d = a.replace("w","W"); // also here, i use replace function for second value after space.
-//   let e = c.concat(d); // here, i concatinate both values.
-//   // console.log(e)  // it shows like this => "Hamza SaeedHamza Saeed"
-//   let f = e.substring(0,6); // to use substring function, i get value from "e" variable.
-//   let g = e.substring(17,23) // to use substring function, i get value from "e" variable.
-// let h = f.concat(g) // further, again i concat variavle "f","g".
-//   // console.log(f);
-//   // console.log(g);
-//   console.log(h);
-// }
-// convertToTitleCase("Hamza Saeed");
+}
+console.log(str)
+}
+fullName("hamza saeed akhtar hello gdddg kdr ja re og")
 
 // ----------------------------------------------------------------
 /*
